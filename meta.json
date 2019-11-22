@@ -1,0 +1,23 @@
+{
+    "prompte": {
+        "name": {
+            "type": "string",
+            "required": true,
+            "message": "项目名称",
+            "default": "kbone-vue-template"
+        },
+        "version": {
+            "type": "string",
+            "required": true,
+            "message": "项目版本",
+            "default": "0.0.1"
+        },
+        "appid": {
+            "type": "string",
+            "required": false,
+            "message": "小程序 appid",
+            "default": ""
+        }
+    },
+    "completeMessage": "请按以下步骤启动，耐心等待:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm i\n  npm start \n  npm run mp  以小程序模式进行调试 \n npm run build:mp 编译成小程序"
+}

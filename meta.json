@@ -19,5 +19,5 @@
             "default": ""
         }
     },
-    "completeMessage": "请按以下步骤启动，耐心等待:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm i\n  npm start \n  npm run mp  以小程序模式进行调试 \n npm run build:mp 编译成小程序"
+    "completeMessage": "请按以下步骤启动，耐心等待:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm i\n  npm start \n  npm run mp  以小程序模式进行调试 \n  npm run build:mp 编译成小程序"
 }

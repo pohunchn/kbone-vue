@@ -12,12 +12,18 @@
             "message": "项目版本",
             "default": "0.0.1"
         },
+        "author": {
+            "type": "string",
+            "required": true,
+            "message": "作者",
+            "default": "wechat-miniprogram"
+        },
         "appid": {
             "type": "string",
             "required": false,
-            "message": "小程序 appid",
+            "message": "小程序appid",
             "default": ""
         }
     },
-    "completeMessage": "请按以下步骤启动，耐心等待:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm i\n  npm start \n  npm run mp  以小程序模式进行调试 \n  npm run build:mp 编译成小程序"
+    "completeMessage": "请按以下步骤启动，耐心等待:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm i  安装 node 依赖\n  npm start  以小程序模式进行调试 \n  npm run build:mp  编译成小程序"
 }

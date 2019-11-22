@@ -2,7 +2,7 @@
   "name": "{{ name }}",
   "version": "{{ version }}",
   "description": "",
-  "author": "wechat-miniprogram",
+  "author": "{{ author }}",
   "keywords": [
     "vue",
     "kbone",

@@ -18,17 +18,17 @@
             "message": "作者",
             "default": "wechat-miniprogram"
         },
-        "appid": {
-            "type": "string",
-            "required": false,
-            "message": "小程序appid",
-            "default": ""
-        },
         "eslint": {
             "type": "confirm",
             "require": true,
             "message": "是否在项目中启用 Eslint ？",
             "default": false
+        },
+        "appid": {
+            "type": "string",
+            "required": false,
+            "message": "小程序appid",
+            "default": ""
         }
     },
     "completeMessage": "请按以下步骤启动，耐心等待:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm i  安装 node 依赖\n  npm start  以小程序模式进行调试 \n  npm run build:mp  编译成小程序"

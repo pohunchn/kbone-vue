@@ -15,8 +15,8 @@ module.exports = {
   },
   module: {
     rules: [
-      // eslint
       {{#if eslint}}
+      // eslint
       {
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',

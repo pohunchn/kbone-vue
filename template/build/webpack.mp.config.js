@@ -1,6 +1,8 @@
 const path = require('path')
 const webpack = require('webpack')
+{{#if eslint}}
 const eslintFriendlyFormatter = require('eslint-friendly-formatter')
+{{/if}}
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const {VueLoaderPlugin} = require('vue-loader')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
@@ -112,6 +114,7 @@ module.exports = {
           }
         ],
       },
+      {{#if eslint}}
       // eslint
       {
         test: /\.(js|vue)$/,
@@ -123,6 +126,7 @@ module.exports = {
           emitWarning: true,
         },
       },
+      {{/if}}
       // vue
       {
         test: /\.vue$/,

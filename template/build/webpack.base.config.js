@@ -1,5 +1,7 @@
 const path = require('path')
+{{#if eslint}}
 const eslintFriendlyFormatter = require('eslint-friendly-formatter')
+{{/if}}
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
@@ -14,6 +16,7 @@ module.exports = {
   module: {
     rules: [
       // eslint
+      {{#if eslint}}
       {
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',
@@ -24,6 +27,7 @@ module.exports = {
           emitWarning: true,
         },
       },
+      {{/if}}
       // vue
       {
         test: /\.vue$/,

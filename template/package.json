@@ -25,7 +25,6 @@
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
-    "babel-eslint": "^8.2.1",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "babel-loader": "^7.1.1",
     "babel-plugin-dynamic-import-node": "^1.2.0",
@@ -37,6 +36,8 @@
     "babel-preset-stage-2": "^6.22.0",
     "cross-env": "^6.0.3",
     "css-loader": "^0.28.0",
+    {{#if eslint}}
+    "babel-eslint": "^8.2.1",
     "eslint": "^4.15.0",
     "eslint-config-airbnb-base": "^11.3.0",
     "eslint-friendly-formatter": "^3.0.0",
@@ -44,6 +45,7 @@
     "eslint-loader": "^3.0.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-vue": "^4.0.0",
+    {{/if}}
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
     "html-webpack-plugin": "^3.2.0",

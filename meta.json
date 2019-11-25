@@ -24,21 +24,12 @@
             "message": "是否在项目中启用 Eslint ？",
             "default": false
         },
-        "miniprogram": {
-            "type": "confirm",
-            "require": true,
-            "message": "是否在项目中初始化小程序依赖？（如果是，则无须在小程序（dist/mp）中重新安装依赖及构建）",
-            "default": true
-        },
         "appid": {
             "type": "string",
             "required": false,
             "message": "小程序appid",
             "default": ""
         }
-    },
-    "filters": {
-        "dist/mp/*": "miniprogram"
     },
     "completeMessage": "请按以下步骤启动，耐心等待:\n\n  {{^inPlace}}cd {{destDirName}}\n  {{/inPlace}}npm i  安装 node 依赖\n  npm start  以小程序模式进行调试 \n  npm run build:mp  编译成小程序"
 }
